@@ -9,20 +9,22 @@ h2 {
 .item {
     display: flex;
     width: 100%;
+    position: relative;
 }
 
-hr {
-    // display: none;
-    // width: 90%;
-    // color: #E5DDD5;
-}
-
-hr::before {
+.item::before {
     content: '';
+    position: absolute;
     display: block;
-    width: 90%;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
     height: 1px;
     background: #E5DDD5;
     margin: 0 auto;
 
+}
+
+.item:last-child::before {
+    display: none;
 }
