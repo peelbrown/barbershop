@@ -1,0 +1,46 @@
+.footer {
+    text-align: center;
+    background: @color-footer;
+    color: #fff;
+
+    .contacts {
+        line-height: 2rem;
+        width: 100%;
+
+        p {
+            padding: 0px 80px;
+        }
+
+        p:first-child {
+            padding-top: 30px;
+        }
+
+        &__name {
+            font-weight: 700;
+        }
+    }
+
+    .social {
+        display: flex;
+
+        .social__btn {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #3E3E3E;
+            padding: 8% 11%;
+        }
+
+        .vk {background: url(../img/vk.png) no-repeat 50%;}
+        .fb {background: url(../img/fa.png) no-repeat 50%;}
+        .in {background: url(../img/in.png) no-repeat 50%;}
+    }
+
+    .developed {
+        padding-bottom: 30px;
+        
+        p {
+            font-weight: 700;
+            margin-top: 30px;
+        }
+    }
+}
